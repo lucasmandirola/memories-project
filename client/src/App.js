@@ -6,6 +6,7 @@ import memories from './imgs/memories.png';
 import Posts from './Components/Posts/Posts';
 import Form from './Components/Form/Form';
 import useStyles from './styles';
+import NavBar from './Components/NavBar/NavBar';
 
 function App() {
   const classes = useStyles()
@@ -18,10 +19,7 @@ function App() {
 
   return (
     <Container maxidth='lg'>
-      <AppBar className={classes.appBar} position='static' color='inherit'>
-        <Typography className={classes.heading} variant='h2' align='center' >Memories</Typography>
-        <img className={classes.image} src={memories} alt='memories' height='60'/>
-      </AppBar>
+      <NavBar/>
       <Grow in>
         <Container>
           <Grid className={classes.mainContainer} container justify='space-between' alignItems='stretch' spacing={3}>
